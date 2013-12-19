@@ -1,4 +1,4 @@
-# Multiple Vererbung
+# Multiple Vererbung — Beispiele
 Die beiden Verzeichnisse zeigen zwei Programmiersprachen dabei, wie Multiple 
 Vererbung funktioniert. 
 
@@ -21,3 +21,12 @@ dies kann auch zu schwer zu findenden Bugs führen, wenn eine Methode einer
 weiter rechts stehenden "Basisklasse" (eines weiter rechts stehenden Mixins)
 mit einem Datenfeld interagieren möchte, das nicht mehr der Kontrolle der 
 eigenen Klasse unterliegt.
+
+## MI vs. Mixins
+Hier zeigt sich außerdem der grundlegende Unterschied zwischen MI und Mixins. 
+Die Eigenschaften von Mixins werden in ihre "erbenden" Klassen 
+"hineingemischt". Eine "echte" Mehrfachvererbung muss den Zugriff auf die
+mit der Instanz mitgeführten Basisklassen-Eigenschaften auch bei einer 
+Namenskollision ermöglichen. 
+
+Suggestions welcome.
