@@ -9,18 +9,18 @@ class Person(object):
 class Clubmitglied(Person):
     def __init__(self, name, kennziffer):
         Person.__init__(self, name)
-        self.kennziffer = kennziffer
+        self.__kennziffer = kennziffer
 
     def get_kennziffer(self):
-        return self.kennziffer
+        return self.__kennziffer
 
 class Angestellter(Person):
     def __init__(self, name, kennziffer):
         Person.__init__(self, name)
-        self.kennziffer = kennziffer
+        self.__kennziffer = kennziffer
 
     def get_kennziffer(self):
-        return self.kennziffer
+        return self.__kennziffer
 
 class Schnittmenge(Angestellter, Clubmitglied):
     def __init__(self, name, angest_kennziffer, club_kennziffer):
